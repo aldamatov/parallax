@@ -1,0 +1,122 @@
+/* top hero secton*/
+
+* {
+  margin: 0;
+}
+.img1 {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(img/img1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  position: relative;
+
+  /* Flexbox */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Hero Secton */
+
+.hero {
+  background: radial-gradient(blue 50%, skyblue, white);
+  opacity: 0.7;
+  padding: 4rem;
+  width: 50%;
+}
+
+h1 {
+  color: black;
+  text-align: center;
+  transition: all 1000ms ease-in;
+}
+h1:hover {
+  color: white;
+
+  font-size: 50px;
+}
+.hero-text-section {
+  margin-top: 3rem;
+  text-align: center;
+  font-size: 20px;
+}
+
+/* Down Arrow Style */
+.down-arrow {
+  font-size: 100px;
+  font-weight: bolder;
+  transform: rotate(90deg);
+  color: bluexx;
+
+  position: absolute;
+  bottom: 100px;
+
+  animation: bounce 2000ms infinite ease-in;
+}
+
+@keyframes bounce {
+  0% {
+    bottom: 100px;
+  }
+  /*   25% {
+    right: 100px;
+    bottom: 10px;
+  }
+  60% {
+    left: 100px;
+  } */
+  100% {
+    bottom: 10px;
+    color: blue;
+  }
+}
+.img2,
+.img3 {
+  width: 100vw;
+  height: 50vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img2 {
+  background-image: url(img/img2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.img3 {
+  background-image: url(img/img3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/* Text Section */
+section {
+  background: rgb(12, 105, 148);
+  color: white;
+  padding: 4rem;
+}
+
+section > p {
+  margin: 1rem;
+}
+/* Image title */
+.title {
+  font-size: 3rem;
+  text-transform: uppercase;
+
+  background: rgba(135, 206, 235, 0.2);
+
+  color: white;
+  padding: 20px 50px;
+  letter-spacing: 1rem;
+}
+
+/* Parallax Effect */
+.img1,
+.img2,
+.img3 {
+  background-attachment: fixed;
+}
